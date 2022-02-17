@@ -2,6 +2,7 @@ import argparse
 from connect4 import connect4
 from players import human2, stupidAI, randomAI, human, minimaxAI, alphaBetaAI
 from montecarlo import monteCarloAI
+import pdb # Mine
 
 parser = argparse.ArgumentParser(description='Run programming assignment 1')
 parser.add_argument('-w', default=6, type=int, help='Rows of game')
@@ -38,5 +39,6 @@ agents = {'human': human2, 'humanTxt': human, 'stupidAI': stupidAI, 'randomAI': 
 if __name__ == '__main__':
 	player1 = agents[args.p1](1, seed)
 	player2 = agents[args.p2](2, seed)
+	# pdb.set_trace()
 	c4 = connect4(player1, player2, board_shape=(w,l), visualize=visualize, limit_players=limit_players, time_limit=time_limit, verbose=verbose)
 	c4.play()

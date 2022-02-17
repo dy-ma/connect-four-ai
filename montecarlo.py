@@ -20,7 +20,7 @@ class monteCarloAI(connect4Player):
 		vs = np.zeros(7)
 		# Play until told to stop
 		counter = 0
-		while True:
+		while counter < 1000:
 			first_move = random.choice(indices)
 			turnout = self.playRandomGame(deepcopy(env), first_move)
 			if turnout == self.position:
@@ -30,6 +30,7 @@ class monteCarloAI(connect4Player):
 			if counter % 100 == 0:
 				move[:] = [np.argmax(vs)]
 			counter += 1
+		move[:] = [np.argmax(vs)]
 
 	def playRandomGame(self, env, first_move):
 		switch = {1:2,2:1}
