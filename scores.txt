@@ -1,0 +1,594 @@
+Minimax Games
+
+===== Minimax VS Stupid =====
+
+Summary: 
+p1 Wins: 5
+p2 Wins: 0
+
+> python main.py -p1 minimaxAI -p2 stupidAI -limit_players 1,2 -seed 1 
+[[0 0 0 2 0 0 0]
+ [0 0 0 1 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 2 1 0 0 0]
+ [0 0 2 2 0 0 0]
+ [1 1 1 1 0 0 0]]
+Player  1  has won
+
+> python main.py -p1 minimaxAI -p2 stupidAI -limit_players 1,2 -seed 2
+[[0 0 0 2 0 0 0]
+ [0 0 0 1 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 2 1 0 0 0]
+ [0 0 2 2 0 0 0]
+ [1 1 1 1 0 0 0]]
+Player  1  has won
+
+> python main.py -p1 minimaxAI -p2 stupidAI -limit_players 1,2 -seed 3 
+[[0 0 0 2 0 0 0]
+ [0 0 0 1 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 2 1 0 0 0]
+ [0 0 2 2 0 0 0]
+ [1 1 1 1 0 0 0]]
+Player  1  has won
+
+> python main.py -p1 minimaxAI -p2 stupidAI -limit_players 1,2 -seed 4 
+[[0 0 0 2 0 0 0]
+ [0 0 0 1 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 2 1 0 0 0]
+ [0 0 2 2 0 0 0]
+ [1 1 1 1 0 0 0]]
+Player  1  has won
+
+> python main.py -p1 minimaxAI -p2 stupidAI -limit_players 1,2 -seed 5 
+[[0 0 0 2 0 0 0]
+ [0 0 0 1 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 2 1 0 0 0]
+ [0 0 2 2 0 0 0]
+ [1 1 1 1 0 0 0]]
+Player  1  has won
+
+===== Stupid VS Minimax =====
+
+Summary: 
+p1 Wins: 0
+p2 Wins: 5
+
+> python main.py -p1 stupidAI -p2 minimaxAI -limit_players 1,2 -seed 1
+[[0 0 1 2 0 0 0]
+ [0 0 1 1 0 0 0]
+ [0 0 2 2 0 0 0]
+ [0 0 1 1 0 0 0]
+ [0 2 2 2 2 0 0]
+ [0 1 1 1 2 0 0]]
+Player  2  has won
+
+> python main.py -p1 stupidAI -p2 minimaxAI -limit_players 1,2 -seed 2
+[[0 0 1 2 0 0 0]
+ [0 0 1 1 0 0 0]
+ [0 0 2 2 0 0 0]
+ [0 0 1 1 0 0 0]
+ [0 2 2 2 2 0 0]
+ [0 1 1 1 2 0 0]]
+Player  2  has won
+
+> python main.py -p1 stupidAI -p2 minimaxAI -limit_players 1,2 -seed 3
+[[0 0 1 2 0 0 0]
+ [0 0 1 1 0 0 0]
+ [0 0 2 2 0 0 0]
+ [0 0 1 1 0 0 0]
+ [0 2 2 2 2 0 0]
+ [0 1 1 1 2 0 0]]
+Player  2  has won
+
+> python main.py -p1 stupidAI -p2 minimaxAI -limit_players 1,2 -seed 4
+[[0 0 1 2 0 0 0]
+ [0 0 1 1 0 0 0]
+ [0 0 2 2 0 0 0]
+ [0 0 1 1 0 0 0]
+ [0 2 2 2 2 0 0]
+ [0 1 1 1 2 0 0]]
+Player  2  has won
+
+> python main.py -p1 stupidAI -p2 minimaxAI -limit_players 1,2 -seed 5
+[[0 0 1 2 0 0 0]
+ [0 0 1 1 0 0 0]
+ [0 0 2 2 0 0 0]
+ [0 0 1 1 0 0 0]
+ [0 2 2 2 2 0 0]
+ [0 1 1 1 2 0 0]]
+Player  2  has won
+
+===== Minimax VS Random =====
+
+Summary: 
+p1 Wins: 5
+p2 Wins: 0
+
+> python main.py -p1 minimaxAI -p2 randomAI -limit_players 1,2 -seed 1
+[[0 0 0 2 0 0 0]
+ [0 0 0 1 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 0 1 0 0 0]
+ [2 0 0 1 0 0 0]
+ [2 2 1 1 1 1 2]]
+Player  1  has won
+
+> python main.py -p1 minimaxAI -p2 randomAI -limit_players 1,2 -seed 2
+[[0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0]
+ [0 0 0 1 0 0 0]
+ [0 0 0 1 0 0 0]
+ [0 0 0 1 0 0 0]
+ [2 0 2 1 0 2 0]]
+Player  1  has won
+
+> python main.py -p1 minimaxAI -p2 randomAI -limit_players 1,2 -seed 3
+[[0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0]
+ [0 0 0 1 0 0 0]
+ [0 0 0 1 2 0 0]
+ [0 0 0 1 2 0 0]
+ [0 0 0 1 2 0 0]]
+Player  1  has won
+
+> python main.py -p1 minimaxAI -p2 randomAI -limit_players 1,2 -seed 4
+[[1 0 0 1 0 0 0]
+ [2 0 0 1 0 0 0]
+ [1 0 0 1 0 0 0]
+ [2 0 0 2 2 0 0]
+ [2 1 1 1 1 0 0]
+ [2 2 2 1 2 0 0]]
+Player  1  has won
+
+> python main.py -p1 minimaxAI -p2 randomAI -limit_players 1,2 -seed 5
+[[0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0]
+ [0 0 0 1 0 0 0]
+ [0 0 0 1 0 2 0]
+ [0 0 0 1 0 2 0]
+ [0 0 0 1 0 2 0]]
+Player  1  has won
+
+===== Random VS Minimax =====
+
+Summary: 
+p1 Wins: 0
+p2 Wins: 5
+
+> python main.py -p1 randomAI -p2 minimaxAI -limit_players 1,2 -seed 1
+[[0 0 0 1 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 0 1 2 0 0]
+ [0 0 0 2 1 0 1]
+ [2 0 2 2 1 0 1]
+ [1 2 2 2 1 0 1]]
+Player  2  has won
+
+> python main.py -p1 randomAI -p2 minimaxAI -limit_players 1,2 -seed 2
+[[0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 0 2 0 0 0]
+ [1 1 0 2 0 1 1]]
+Player  2  has won
+
+> python main.py -p1 randomAI -p2 minimaxAI -limit_players 1,2 -seed 3
+[[0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 0 2 1 0 0]
+ [0 0 1 2 1 1 0]]
+Player  2  has won
+
+> python main.py -p1 randomAI -p2 minimaxAI -limit_players 1,2 -seed 4
+[[0 0 0 2 0 0 0]
+ [0 0 0 1 0 0 0]
+ [0 0 0 2 0 0 0]
+ [2 2 2 2 0 0 0]
+ [1 1 2 1 0 0 0]
+ [1 1 1 2 0 1 0]]
+Player  2  has won
+
+> python main.py -p1 randomAI -p2 minimaxAI -limit_players 1,2 -seed 5
+[[0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 0 2 0 0 0]
+ [1 0 1 2 0 1 1]]
+Player  2  has won
+
+===== Minimax VS MonteCarlo =====
+
+Summary:
+p1 Wins: 7
+p2 Wins: 3
+
+> python main.py -p1 minimaxAI -p2 monteCarloAI -limit_players 1,2 -seed 1
+[[2 0 1 1 1 0 0]
+ [2 0 1 1 1 0 0]
+ [1 0 1 1 1 0 0]
+ [2 0 2 2 2 1 1]
+ [2 0 1 1 2 2 2]
+ [2 2 2 1 2 1 2]]
+Player  1  has won
+
+> python main.py -p1 minimaxAI -p2 monteCarloAI -limit_players 1,2 -seed 2
+[[1 2 0 2 1 0 0]
+ [2 1 0 1 1 0 0]
+ [1 1 0 1 1 0 0]
+ [2 1 2 2 2 2 0]
+ [1 2 2 1 2 1 0]
+ [2 2 1 1 2 2 0]]
+Player  2  has won
+
+> python main.py -p1 minimaxAI -p2 monteCarloAI -limit_players 1,2 -seed 3
+[[0 0 0 1 0 1 0]
+ [0 0 2 1 0 1 0]
+ [0 0 1 1 2 1 0]
+ [0 0 1 2 1 1 0]
+ [1 0 2 1 2 2 2]
+ [2 0 2 1 2 2 2]]
+Player  1  has won
+
+> python main.py -p1 minimaxAI -p2 monteCarloAI -limit_players 1,2 -seed 4
+[[1 2 1 1 2 0 2]
+ [1 2 1 1 2 0 1]
+ [1 1 1 2 1 0 2]
+ [2 2 2 1 2 0 1]
+ [2 1 1 1 2 2 2]
+ [2 2 1 1 2 1 2]]
+Player  2  has won
+
+> python main.py -p1 minimaxAI -p2 monteCarloAI -limit_players 1,2 -seed 5
+[[0 0 1 0 0 0 0]
+ [0 0 1 1 0 0 0]
+ [0 0 1 2 0 0 0]
+ [0 0 1 1 0 0 2]
+ [0 0 2 1 0 0 2]
+ [0 0 2 1 0 2 2]]
+Player  1  has won
+
+> python main.py -p1 minimaxAI -p2 monteCarloAI -limit_players 1,2 -seed 6
+[[0 2 1 2 0 0 2]
+ [0 1 2 1 0 1 2]
+ [0 1 1 1 0 2 1]
+ [0 1 1 1 0 1 2]
+ [1 2 2 2 0 1 2]
+ [2 2 2 1 0 1 2]]
+Player  1  has won
+
+> python main.py -p1 minimaxAI -p2 monteCarloAI -limit_players 1,2 -seed 7
+[[0 0 0 1 0 0 0]
+ [0 0 0 1 1 0 0]
+ [0 0 0 1 1 0 0]
+ [0 0 2 2 2 2 0]
+ [0 0 2 1 2 1 0]
+ [1 0 2 1 2 2 0]]
+Player  2  has won
+
+> python main.py -p1 minimaxAI -p2 monteCarloAI -limit_players 1,2 -seed 8
+[[0 0 0 1 0 0 0]
+ [0 0 0 1 0 0 0]
+ [0 0 0 1 0 0 1]
+ [0 2 1 2 0 0 2]
+ [0 1 1 1 0 2 2]
+ [1 2 2 1 0 2 2]]
+Player  1  has won
+
+> python main.py -p1 minimaxAI -p2 monteCarloAI -limit_players 1,2 -seed 9
+[[0 0 0 1 1 0 0]
+ [0 0 0 1 1 0 0]
+ [0 0 0 1 1 0 0]
+ [0 0 2 2 1 0 0]
+ [2 1 2 1 2 0 0]
+ [2 2 2 1 2 0 0]]
+Player  1  has won
+
+> python main.py -p1 minimaxAI -p2 monteCarloAI -limit_players 1,2 -seed 10
+[[0 1 0 1 2 1 0]
+ [2 1 0 1 1 1 0]
+ [1 1 0 1 2 2 0]
+ [1 2 1 2 1 1 2]
+ [2 2 1 1 2 1 2]
+ [2 2 2 1 2 2 2]]
+Player  1  has won
+
+===== MonteCarlo VS Minimax =====
+
+Summary:
+p1 Wins: 6
+p2 Wins: 4
+
+> python main.py -p1 monteCarloAI -p2 minimaxAI -limit_players 1,2 -seed 1
+[[0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 0 2 0 0 0]
+ [2 1 1 1 1 0 0]]
+Player  1  has won
+
+> python main.py -p1 monteCarloAI -p2 minimaxAI -limit_players 1,2 -seed 2
+[[1 0 2 2 2 1 2]
+ [2 0 1 1 2 2 1]
+ [1 0 2 2 2 1 2]
+ [2 1 1 1 1 2 1]
+ [1 2 2 2 1 1 2]
+ [1 2 1 2 1 1 1]]
+Player  1  has won
+
+> python main.py -p1 monteCarloAI -p2 minimaxAI -limit_players 1,2 -seed 3
+[[0 0 0 0 0 0 0]
+ [0 0 0 2 2 0 0]
+ [0 2 2 2 2 0 0]
+ [0 1 2 1 1 0 0]
+ [0 1 1 2 1 0 0]
+ [0 1 1 2 1 0 0]]
+Player  2  has won
+
+> python main.py -p1 monteCarloAI -p2 minimaxAI -limit_players 1,2 -seed 4
+[[0 0 0 0 0 0 0]
+ [0 0 2 2 0 0 0]
+ [0 0 1 2 1 2 0]
+ [0 0 2 1 2 1 0]
+ [2 0 1 2 2 1 0]
+ [1 1 1 2 1 1 0]]
+Player  1  has won
+
+> python main.py -p1 monteCarloAI -p2 minimaxAI -limit_players 1,2 -seed 5
+[[0 0 1 2 0 0 0]
+ [0 0 2 1 0 2 0]
+ [0 0 2 2 0 1 0]
+ [0 0 1 2 0 2 0]
+ [0 0 1 1 1 1 0]
+ [2 2 1 2 1 1 0]]
+Player  1  has won
+
+> python main.py -p1 monteCarloAI -p2 minimaxAI -limit_players 1,2 -seed 6
+[[0 0 2 2 0 0 0]
+ [0 0 2 2 0 1 0]
+ [0 0 2 2 0 2 0]
+ [0 0 2 1 0 1 0]
+ [0 0 1 2 1 1 0]
+ [1 0 1 2 1 1 0]]
+Player  2  has won
+
+> python main.py -p1 monteCarloAI -p2 minimaxAI -limit_players 1,2 -seed 7
+[[0 0 0 0 0 0 0]
+ [0 0 0 2 0 0 0]
+ [2 0 0 2 1 0 0]
+ [1 0 0 1 2 0 0]
+ [1 0 0 2 1 2 0]
+ [1 0 0 2 1 1 2]]
+Player  2  has won
+
+> python main.py -p1 monteCarloAI -p2 minimaxAI -limit_players 1,2 -seed 8
+[[0 0 0 1 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 0 1 0 0 0]
+ [2 0 0 2 0 0 0]
+ [2 1 1 1 1 0 0]]
+Player  1  has won
+
+> python main.py -p1 monteCarloAI -p2 minimaxAI -limit_players 1,2 -seed 9
+[[0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 0 2 0 0 0]
+ [2 1 1 1 1 0 0]]
+Player  1  has won
+
+> python main.py -p1 monteCarloAI -p2 minimaxAI -limit_players 1,2 -seed 10
+[[0 0 0 0 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 2 1 1 0 0 0]
+ [1 2 2 2 0 0 0]
+ [2 1 1 2 0 0 0]
+ [1 2 1 1 2 1 0]]
+Player  2  has won
+
+
+=====================================
+
+Alpha Beta Pruning Games
+
+===== AlphaBeta VS MonteCarlo =====
+
+Summary:
+p1 Wins: 10
+p2 Wins: 0
+
+> python main.py -p1 alphaBetaAI -p2 monteCarloAI -limit_players 1,2 -seed 1
+[[0 0 0 1 2 0 0]
+ [0 0 0 1 1 0 0]
+ [0 0 0 1 1 1 1]
+ [0 0 0 2 1 1 2]
+ [0 0 1 1 2 2 2]
+ [2 0 2 1 2 2 2]]
+Player  1  has won
+
+> python main.py -p1 alphaBetaAI -p2 monteCarloAI -limit_players 1,2 -seed 2
+[[0 0 2 1 2 0 0]
+ [0 0 2 1 1 1 0]
+ [0 0 2 1 1 1 0]
+ [0 0 1 2 1 2 1]
+ [0 0 2 1 2 1 2]
+ [2 0 2 1 2 1 2]]
+Player  1  has won
+
+> python main.py -p1 alphaBetaAI -p2 monteCarloAI -limit_players 1,2 -seed 3
+[[0 0 0 2 2 0 0]
+ [0 0 0 1 1 0 0]
+ [0 0 2 1 2 0 0]
+ [0 1 1 1 1 0 0]
+ [2 2 1 2 1 0 0]
+ [2 2 1 1 2 0 0]]
+Player  1  has won
+
+> python main.py -p1 alphaBetaAI -p2 monteCarloAI -limit_players 1,2 -seed 4
+[[0 0 2 1 0 0 0]
+ [0 0 1 1 1 0 0]
+ [0 0 2 2 1 0 0]
+ [0 0 1 1 1 0 0]
+ [0 0 2 1 1 0 2]
+ [2 0 2 1 2 2 2]]
+Player  1  has won
+
+> python main.py -p1 alphaBetaAI -p2 monteCarloAI -limit_players 1,2 -seed 5
+[[0 0 1 2 0 0 0]
+ [0 0 1 1 0 0 0]
+ [0 0 1 2 0 0 1]
+ [0 0 1 1 0 0 2]
+ [0 0 2 1 0 0 2]
+ [0 0 2 1 0 2 2]]
+Player  1  has won
+
+> python main.py -p1 alphaBetaAI -p2 monteCarloAI -limit_players 1,2 -seed 6
+[[0 0 0 2 0 0 0]
+ [0 0 0 1 1 0 0]
+ [0 0 0 1 1 0 0]
+ [0 0 0 1 1 0 0]
+ [0 0 0 2 1 0 2]
+ [0 2 0 1 2 2 2]]
+Player  1  has won
+
+> python main.py -p1 alphaBetaAI -p2 monteCarloAI -limit_players 1,2 -seed 7
+[[0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0]
+ [0 0 0 1 0 0 0]
+ [0 2 0 1 0 0 0]
+ [0 2 0 1 0 0 0]
+ [0 2 0 1 0 0 0]]
+Player  1  has won
+
+> python main.py -p1 alphaBetaAI -p2 monteCarloAI -limit_players 1,2 -seed 8
+[[0 0 2 1 0 0 0]
+ [0 0 2 1 0 0 2]
+ [0 0 1 2 1 0 1]
+ [0 0 1 1 1 2 2]
+ [0 0 1 1 1 2 2]
+ [0 2 2 1 1 2 2]]
+Player  1  has won
+
+> python main.py -p1 alphaBetaAI -p2 monteCarloAI -limit_players 1,2 -seed 9
+[[0 0 0 1 2 0 0]
+ [2 0 0 1 1 0 0]
+ [1 0 2 1 1 0 0]
+ [2 0 1 2 1 0 0]
+ [2 1 2 1 2 0 0]
+ [2 2 1 1 2 0 0]]
+Player  1  has won
+
+> python main.py -p1 alphaBetaAI -p2 monteCarloAI -limit_players 1,2 -seed 10
+[[0 0 0 1 1 0 0]
+ [0 1 0 1 1 0 0]
+ [0 1 1 1 2 1 0]
+ [0 2 2 2 1 2 1]
+ [0 2 1 1 2 1 2]
+ [2 2 2 1 2 2 2]]
+Player  1  has won
+
+===== AlphaBeta VS MonteCarlo =====
+
+Summary:
+p1 Wins: 0
+p2 Wins: 0
+
+> python main.py -p1 monteCarloAI -p2 alphaBetaAI -limit_players 1,2 -seed 1
+[[0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 1 1 1 1 0 0]]
+Player  1  has won
+
+> python main.py -p1 monteCarloAI -p2 alphaBetaAI -limit_players 1,2 -seed 2
+[[0 0 0 2 0 0 0]
+ [0 0 0 2 1 0 0]
+ [0 0 0 1 2 0 0]
+ [0 2 1 2 2 0 0]
+ [0 1 2 1 1 0 0]
+ [0 1 1 2 1 0 0]]
+Player  1  has won
+
+> python main.py -p1 monteCarloAI -p2 alphaBetaAI -limit_players 1,2 -seed 3
+[[0 0 0 1 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 2 2 2 2 0 0]
+ [0 1 1 2 2 0 0]
+ [0 2 1 1 1 0 0]
+ [0 1 1 2 1 0 0]]
+Player  2  has won
+
+> python main.py -p1 monteCarloAI -p2 alphaBetaAI -limit_players 1,2 -seed 4
+[[0 0 0 2 0 0 0]
+ [0 0 0 2 0 2 0]
+ [2 0 2 1 0 1 0]
+ [1 0 2 2 2 2 0]
+ [1 0 1 2 1 1 0]
+ [1 0 1 2 1 1 0]]
+Player  2  has won
+
+> python main.py -p1 monteCarloAI -p2 alphaBetaAI -limit_players 1,2 -seed 5
+[[0 0 2 2 0 0 1]
+ [0 0 2 2 0 0 1]
+ [0 0 2 2 0 0 2]
+ [0 0 2 1 0 0 1]
+ [0 0 1 2 0 0 1]
+ [1 1 2 1 1 2 1]]
+Player  2  has won
+
+> python main.py -p1 monteCarloAI -p2 alphaBetaAI -limit_players 1,2 -seed 6
+[[0 0 1 2 0 2 0]
+ [0 0 2 2 0 1 0]
+ [2 0 2 1 0 1 0]
+ [1 0 2 2 1 2 0]
+ [1 2 1 1 2 1 0]
+ [1 2 1 2 1 1 0]]
+Player  1  has won
+
+> python main.py -p1 monteCarloAI -p2 alphaBetaAI -limit_players 1,2 -seed 7
+[[0 0 0 0 0 0 0]
+ [0 0 0 2 1 0 0]
+ [0 0 2 2 2 2 0]
+ [0 0 2 1 2 1 0]
+ [0 0 1 2 1 1 0]
+ [1 2 1 1 1 2 0]]
+Player  2  has won
+
+> python main.py -p1 monteCarloAI -p2 alphaBetaAI -limit_players 1,2 -seed 8
+[[0 0 0 0 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 0 1 0 0 0]
+ [0 0 0 2 2 0 0]
+ [0 1 1 1 1 0 0]]
+Player  1  has won
+
+> python main.py -p1 monteCarloAI -p2 alphaBetaAI -limit_players 1,2 -seed 9
+[[0 0 0 0 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 2 2 0 0 0]
+ [0 0 1 2 0 0 0]
+ [0 0 1 2 1 0 0]
+ [1 2 1 1 1 2 0]]
+Player  2  has won
+
+> python main.py -p1 monteCarloAI -p2 alphaBetaAI -limit_players 1,2 -seed 10
+[[0 0 0 0 0 0 0]
+ [0 0 0 2 0 0 0]
+ [0 0 2 1 0 0 0]
+ [0 0 2 2 2 2 0]
+ [0 0 1 2 1 1 0]
+ [1 2 1 1 1 2 1]]
+Player  2  has won
